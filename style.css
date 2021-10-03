@@ -1,0 +1,78 @@
+/*all the coloring, styling is done here. By giving a rule to html*/
+/* symbol "*" means applying to all*/
+*{
+	font-family:  "Neucha", sans-serif; 
+
+} 
+h1, h2 {
+	font-family: "Montserrat", sans-serif;
+}
+
+h1, h2 {
+	font-family: "something else", sans-serif;
+}
+img {
+	height: 250px;
+	width: 250px
+}
+/* what it means: ;
+selector {
+	css-attribute 1 (aka what to change): value (how to change it), value 2 (default font in case neucha goes down); 
+	css-attribute 2: value;
+
+Overlap: CSS specificity rule: Higher specificity -> Higher Priority; and in case the same selector, the bottom one -> higher priority
+}
+
+*/
+/*# to target id, . to target class*/
+.purple-text { color: purple; }
+.red-text {color: red;}
+
+/*everything with class = "color-text" will apply that color*/
+
+#landing {
+	height: 80vh;
+	/*vh: view height = screen height, 80 = 8-% of the vn*/
+	display: flex;
+	flex-direction:  column;
+	justify-content: center;
+	align-items: center;
+}
+
+/*remove gray background on jumbotron*/
+.jumbotron {
+	background-color: transparent;
+}
+
+#gallery {
+	height: 75vh;
+	/*vh: view height = screen height, 80 = 8-% of the vn*/
+	display: flex;
+	flex-direction:  column;
+	justify-content: center;
+	align-items: center;
+	background-color: #c3925a;
+
+}
+	
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+h2 {
+	color: black ;
+}
+
+.tools {
+	padding: 25px;
+	height:200px;
+	border: 4px dashed #f2f2f2; 
+	width: 75%;
+	margin: 10px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
